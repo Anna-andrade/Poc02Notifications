@@ -11,6 +11,9 @@
 		DB57FF4528C1465F00C5D292 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB57FF4428C1465F00C5D292 /* ContentView.swift */; };
 		DB57FF4728C1466000C5D292 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB57FF4628C1466000C5D292 /* Assets.xcassets */; };
 		DB57FF4A28C1466000C5D292 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB57FF4928C1466000C5D292 /* Preview Assets.xcassets */; };
+		DB57FF5128C1490D00C5D292 /* NotificationListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB57FF5028C1490D00C5D292 /* NotificationListView.swift */; };
+		DB57FF5428C1494B00C5D292 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB57FF5328C1494B00C5D292 /* NotificationManager.swift */; };
+		DB57FF5628C152DB00C5D292 /* CreateNotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB57FF5528C152DB00C5D292 /* CreateNotificationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +22,9 @@
 		DB57FF4428C1465F00C5D292 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		DB57FF4628C1466000C5D292 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DB57FF4928C1466000C5D292 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DB57FF5028C1490D00C5D292 /* NotificationListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationListView.swift; sourceTree = "<group>"; };
+		DB57FF5328C1494B00C5D292 /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
+		DB57FF5528C152DB00C5D292 /* CreateNotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNotificationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +59,9 @@
 			children = (
 				DB57FF4228C1465F00C5D292 /* Poc02NotificationsApp.swift */,
 				DB57FF4428C1465F00C5D292 /* ContentView.swift */,
+				DB57FF5028C1490D00C5D292 /* NotificationListView.swift */,
+				DB57FF5528C152DB00C5D292 /* CreateNotificationView.swift */,
+				DB57FF5328C1494B00C5D292 /* NotificationManager.swift */,
 				DB57FF4628C1466000C5D292 /* Assets.xcassets */,
 				DB57FF4828C1466000C5D292 /* Preview Content */,
 			);
@@ -139,6 +148,9 @@
 			files = (
 				DB57FF4528C1465F00C5D292 /* ContentView.swift in Sources */,
 				DB57FF4328C1465F00C5D292 /* Poc02NotificationsApp.swift in Sources */,
+				DB57FF5628C152DB00C5D292 /* CreateNotificationView.swift in Sources */,
+				DB57FF5428C1494B00C5D292 /* NotificationManager.swift in Sources */,
+				DB57FF5128C1490D00C5D292 /* NotificationListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

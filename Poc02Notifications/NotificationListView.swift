@@ -21,8 +21,10 @@ struct NotificationListView: View {
         .onChange(of: notificationManager.authorizationStatus){ authorizationStatus in
             switch authorizationStatus{
             case .notDetermined:
+                //request authorization
                 notificationManager.requestAuthorization()
             case .authorized:
+                //get local authorization
                 notificationManager.reloadLocalNotifications()
                 break
             default:
@@ -40,7 +42,9 @@ struct NotificationListView: View {
         })
         .sheet(isPresented: $isCreatePresented) {
             NavigationView {
-                CreateNotificationView()
+                CreateNotificationView(
+                    notificationManager: notificationManager,
+                    isPresented: $isCreatePresented)
             }
             .accentColor(.primary)
         }

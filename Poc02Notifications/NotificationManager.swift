@@ -30,13 +30,26 @@ final class NotificationManager: ObservableObject{
     }
     
     func reloadLocalNotifications() {
-        print("reload local notifications")
         UNUserNotificationCenter.current().getPendingNotificationRequests { notifications in
             DispatchQueue.main.async {
                 self.notifications = notifications
             }
-            
         }
+    }
+    func createLocalNotification(title: String, hour: Int, min: Int, completion: @escaping (Error?) -> Void) {
+        var dateComponents = DateComponents()
+        dateComponents.hour = hour
+        dateComponents.minute = min
+        
+        let trigger = UNCalendarNotificationTrigger(dateMatching: dateComponents, repeats: true)
+        
+        let notificationContent = UNMutableNotificationContent()
+        notificationContent.title = title
+        notificationContent.sound = .default
+        
+        let request = UNNotificationRequest(identifier: UUID().uuidString, content: notificationContent, trigger: trigger)
+        
+        UNUserNotificationCenter.current().add(request, withCompletionHandler: completion)
     }
 }
 
